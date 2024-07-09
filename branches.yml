@@ -1,0 +1,5 @@
+- url: "https://github.com/my-org/repo-1.git"
+  branches: [ 'branch-1', 'branch-2']
+
+- url: "https://github.com/my-org/repo-2.git"
+  branches: [ 'main', 'other' ]

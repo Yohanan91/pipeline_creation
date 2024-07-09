@@ -1,0 +1,7 @@
+pipeline: ((pipeline-name))/((branch))
+steps:
+  - checkout: ((repo_url))
+    branch: ((branch))
+  - run: "make test"
+  - run: deploy
+    only_for_branches: [main] # this means that they deploy step should only be added to the pipeline if the branch=="main"

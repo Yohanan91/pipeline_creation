@@ -1,0 +1,19 @@
+- pipeline: pipeline-1/branch-1
+  steps:
+    - checkout: "https://github.com/my-org/repo-1.git"
+      branch: branch-1
+    - run: "make test"
+
+- pipeline: pipeline-1/branch-2
+  steps:
+    - checkout: "https://github.com/my-org/repo-1.git"
+      branch: branch-2
+    - run: "make test"
+
+- pipeline: pipeline-2/main
+  steps:
+    - checkout: "https://github.com/my-org/repo-2.git"
+      branch: main
+    - run: "make test"
+    - run: deploy
+      # note that the 'only_for_branches: [ main ]' clause should not appear in the output

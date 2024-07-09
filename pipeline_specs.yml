@@ -1,0 +1,8 @@
+pipeline_specs:
+  - name: pipeline-1
+    repo: "https://github.com/my-org/repo-1.git"
+
+  - name: pipeline-2
+    repo: "https://github.com/my-org/repo-2.git"
+    only_for_branches:
+      - main
