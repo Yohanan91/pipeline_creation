@@ -20,5 +20,3 @@ A file called `pipelines.yml` that contains fully hydrated pipeline configs base
 4. All pipeline objects in the output `pipelines.yml` share the same structure, described by `pipeline_template.yml`. The variables in that template (values between `((...))`) are to be replaced with actual values got from the other two input files before being added to the output `pipelines.yml` file.
 5. Some steps in the pipeline template should only appear in the output file if the pipeline object branch matches the `only_for_branches` filter. See the  expected output for an example. 
 
-# Ask before you start
-If any of the instructions here is not clear, please ask your interviewer for clarification.
