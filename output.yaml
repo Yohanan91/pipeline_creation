@@ -14,3 +14,9 @@
     branch: main
   - run: make test
   - run: deploy
+- pipeline: pipeline-2/dev
+  steps:
+  - checkout: https://github.com/my-org/repo-2.git
+    branch: dev
+  - run: make test
+  - run: deploy

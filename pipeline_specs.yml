@@ -6,3 +6,4 @@ pipeline_specs:
     repo: "https://github.com/my-org/repo-2.git"
     only_for_branches:
       - main
+      - dev
